@@ -1,0 +1,17 @@
+[project]
+name = "keyword-selection"
+version = "0.1.0"
+description = "Extraction of keywords regarding Russia-Ukraine war from German parliamentary debates"
+readme = "README.md"
+authors = [
+    { name = "Fabian Simonjetz", email = "fsimonjetz@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+keyword-selection = "keyword_selection:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
