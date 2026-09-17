@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Corpus data
+src/keyword_selection/*.parquet
