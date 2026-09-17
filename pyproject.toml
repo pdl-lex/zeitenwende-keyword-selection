@@ -7,7 +7,11 @@ authors = [
     { name = "Fabian Simonjetz", email = "fsimonjetz@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "bertopic>=0.17.4",
+    "requests>=2.34.2",
+    "stop-words>=2025.11.4",
+]
 
 [project.scripts]
 keyword-selection = "keyword_selection:main"
