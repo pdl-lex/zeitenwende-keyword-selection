@@ -13,6 +13,7 @@ CORPUS_PATH = DATA_PATH / CORPUS_FILE
 def ensure_corpus() -> Path:
     """Check if the corpus is present in DATA_PATH and fetch if not."""
     if not CORPUS_PATH.exists():
+        DATA_PATH.mkdir(parents=True, exist_ok=True)
         response = requests.get(CORPUS_URL, stream=True)
         response.raise_for_status()
         total_size = int(response.headers.get("content-length", 0))
