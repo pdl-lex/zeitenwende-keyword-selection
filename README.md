@@ -14,29 +14,21 @@ Aus diesem sowie den 10 semantisch ähnlichsten Topics werden anschließend die 
 Wörter als Kandidaten herangezogen. Das Ergebnis ist eine Liste von knapp 800 Zielwörtern als Basis
 für die Untersuchung diachronen Wandels.
 
-## Installation
+## Quickstart
 
-### Mit `uv` (empfohlen, schneller)
+Zum Ausführen wird [uv][3] benötigt.
 
 ```bash
 uv sync
+uv run python -m jupyter notebook ./notebooks
 ```
 
-### Alternativ mit `pip`
-
-```bash
-python -m venv .venv
-
-source .venv/bin/activate  # Unter Windows: .venv\Scripts\activate
-
-pip install -e .
-```
-
-## Ausführung
-
-```bash
-uv run python -m keyword_selection
-```
+Im Browser (oder alternativ direkt in VS Code o.a. IDEs) zunächst die Vorverarbeitung und das
+Training von BERTopic ([01_model_training.ipynb](./notebooks/01_model_training.ipynb)) und
+anschließend die Keyword-Extraktion
+([02_target_word_extraction.ipynb](./notebooks/02_target_word_extraction.ipynb)) durchführen.
+Weitere Details sind in den Notebooks dokumentiert.
 
 [1]: https://maartengr.github.io/BERTopic/index.html
 [2]: https://zenodo.org/records/18177196
+[3]: https://docs.astral.sh/uv/
