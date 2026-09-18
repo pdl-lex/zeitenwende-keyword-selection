@@ -10,4 +10,7 @@ wheels/
 .venv
 
 # Corpus data
-src/keyword_selection/*.parquet
+data/
+
+# MacOS meta files
+.DS_Store
