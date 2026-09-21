@@ -21,7 +21,7 @@ def ensure_corpus() -> Path:
         with (
             open(CORPUS_PATH, "wb") as f,
             tqdm(
-                desc="Downloading corpus",
+                desc=f"Downloading {CORPUS_FILE}",
                 total=total_size,
                 unit="iB",
                 unit_scale=True,
