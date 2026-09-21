@@ -17,6 +17,8 @@ diachronen Wandels zusammengestellt.
 Zum Ausführen wird [uv][3] benötigt.
 
 ```bash
+git clone https://github.com/pdl-lex/zeitenwende-keyword-selection.git
+cd zeitenwende-keyword-selection
 uv sync
 uv run python -m jupyter notebook ./notebooks
 ```
